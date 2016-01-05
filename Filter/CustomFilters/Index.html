@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter in controller</title>
+	<meta charset="utf-8" />
+</head>
+<body ng-app="myReverseFilterApp">
+    <div ng-controller="MyController">
+        <input ng-model="greeting" type="text"><br>
+        No filter: {{greeting}}<br>
+        Reverse: {{greeting|reverse}}<br>
+        Reverse + uppercase: {{greeting|reverse:true}}<br>
+    </div>
+    <script src="../../angular/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
